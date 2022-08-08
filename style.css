@@ -22,6 +22,8 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
+    margin: 0px 300px;
+    
 }
 
 .header-link {
@@ -38,8 +40,12 @@ ul {
 .navbar-left,.navbar-right {
     display: flex;
     width: 50%;
-    justify-content: center;
     align-items: center;
+    justify-content: left;
+}
+
+.navbar-right {
+    justify-content: right;
 }
 
 h1 {
@@ -51,13 +57,34 @@ h1 {
 .content {
     display: flex;
     flex-direction: row;
+    margin: 50px 300px;
+    justify-content: space-between;
 }
 
-.content-left,.content-right {
+.content-left {
     display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-right {
+    display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+  
+button.sign-up {
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
 }
 
 a {
